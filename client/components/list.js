@@ -30,7 +30,6 @@ else
 var url = "https://api.github.com/search/repositories?q=topic"	
 axios.get(url)
     .then(function (response) {
-		console.log(response.data.items)
 		 this.setState({ items: response.data.items,
 		 				 showItems: response.data.items.slice(0,5),
 		 				 showTable: true
@@ -75,7 +74,6 @@ render(){
  	 count++
     rows.push(<Row id={showItem.id} name={showItem.name} html_url={showItem.html_url} description={showItem.description} size={showItem.size} score={showItem.score} count={count} />);
 })
- console.log(showItems,"items", showTable)
 	return(
 		<div>
 		<div>
