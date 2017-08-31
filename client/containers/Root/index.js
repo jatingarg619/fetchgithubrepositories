@@ -6,15 +6,10 @@ class Root extends React.Component {
 	render() {
 		
 		return (
-			
-			  
-		<div>
+			<div>
 			    <Header/>
 				<Content className="" />
-
-	    </div>
-			   
-		
+			</div>
 		)
 	}
 

@@ -47,6 +47,7 @@ _handleReset(e){
  				 showItems: [],
 		 	    showTable: false
 		  });
+ this.refs.name.value = ''
  e.preventDefault();     
 }
 
